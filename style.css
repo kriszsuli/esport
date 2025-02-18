@@ -1,0 +1,299 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Montserrat, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #240c0c;
+    color: white;
+    text-align: center;
+    overflow-x:hidden;
+}
+
+.logo {
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 130px;
+}
+.logo2{
+    color: red;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 210px;
+}
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #280000;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-right: 50px;
+}
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-right: 50px;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #280000;
+        text-align: center;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+    background: url("assets/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.pollak{
+    color: #f03b33;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+.sport{
+    text-shadow: 1px 1px 2px black;
+    font-size: 70px;
+}
+.ev{
+    color: white;
+    font-size: 130px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+.hero button {
+    background-color: black;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.hero button:hover{
+    background-color: #f03b33;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(170, 6, 6, 0.473);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #320e0e;
+    margin: auto;
+}
+.content-text {
+    flex: 1;
+    text-align: left;
+    margin-left: 10rem;
+}
+.content-text h2 {
+    font-size: 35px;
+}
+.content-text p {
+    font-size: 30px;
+}
+.content img {
+    width: 250px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 80px;
+}
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    padding-top: 50px;
+}
+
+.timeline-title{
+    margin-top: 3rem;
+    font-size: 40px;
+}
+
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
+    z-index: 0;
+}
+
+.timeline .event {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    width: 25%;
+}
+
+.timeline .event .circle {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border: 5px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5px auto;
+}
+
+.timeline .event .circle::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+    display: block;
+}
+
+.timeline .event h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.timeline .event p {
+    font-size: 14px;
+    margin: 5px 0 0;
+    color: #ddd;
+}
+
+.register {
+    background-color: #190a0a;
+    padding: 30px;
+}
+.register h2 {
+    font-size: 28px;
+}
+.register input {
+    display: block;
+    width: 12%;
+    margin: 10px auto;
+    padding: 12px;
+    border: none;
+    border-radius: 7px;
+    background-color: #723434;
+    color: white;
+    font-size: 16px;
+}
+.register button {
+    background-color: #9f2a2a;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    width: 13%;
+    transition: 0.5s;
+}
+
+
+
+.register p {
+    font-size: 30px;
+}
+.register a{
+    color: white;
+}
+.register h2{
+    font-size: 40px;
+}
+input[type="text"]::placeholder,input[type="email"]::placeholder{
+    text-align: center;
+}
+footer {
+    padding: 20px;
+    background-color: black;
+    font-size: 16px;
+}
+
+footer a{
+    color: white;
+    font-size: 15px;
+}
+
+
+.white{
+    color: white;
+    font-weight: lighter;
+}
+
+.separator {
+    position:absolute;
+    width:0;
+    height:0;
+    border-left: 100vw solid transparent;
+    border-bottom: 3.9vw solid #320e0e;
+    margin-top: -3.85vw;
+    z-index:99;
+}
