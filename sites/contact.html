@@ -1,0 +1,68 @@
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollák E-Sport 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">P<span class="white">E</span></div>
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="/index.html">Főoldal</a>
+            <a href="#">Csapatok</a>
+            <a href="#">Játékok</a>
+            <a href="#">Kapcsolat</a>
+        </div>
+    </nav> 
+    
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <h1>Kapcsolat</h1>
+            </div>
+            <div class="row input-container">
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input type="text" required />
+                        <label>Vezetéknév</label> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:right;">
+                        <input type="text" required />
+                        <label>Keresztnév</label> 
+                    </div>
+                </div>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <input type="email" required />
+                            <label>Email</label> 
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <textarea required></textarea>
+                            <label>Üzenet</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="btn-lrg submit-btn">Küldés</div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <img src="/assets/pollak.svg" alt="pollak logo">
+        <p>&copy; 2025 Pollák E-Sport Bajnokság</p>
+        <a href="https://pollak.hu/">www.pollak.hu</a>
+    </footer>
+    <script src="ham.js"></script>
+</body>
+</html>
