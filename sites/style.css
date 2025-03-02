@@ -5,7 +5,7 @@ body {
     font-family: Montserrat, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #240c0c;
+    background-color: #320e0e;
     color: white;
     text-align: center;
     overflow-x:hidden;
@@ -53,6 +53,9 @@ nav a {
 nav a:hover {
     color: #ffcc00;
 }
+hr{
+    border-top: 1px dashed #280000;
+}
 
 .hamburger {
     display: none;
@@ -81,12 +84,10 @@ nav a:hover {
 }
 
 .content {
+    margin-right: 120px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 40px;
-    background-color: #320e0e;
-    margin: auto;
 }
 .content-text {
     flex: 1;
