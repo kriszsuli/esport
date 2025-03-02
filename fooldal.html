@@ -16,9 +16,9 @@
             &#9776;
         </div>
         <div class="nav-links" id="navLinks">
-            <a href="#">Főoldal</a>
-            <a href="#">Csapatok</a>
-            <a href="#">Játékok</a>
+            <a href="fooldal.html">Főoldal</a>
+            <a href="sites/csapatok.php">Csapatok</a>
+            <a href="sites/games.html">Játékok</a>
             <a href="sites/contact.html">Kapcsolat</a>
         </div>
     </nav>
@@ -67,8 +67,8 @@
     </section>
     <section id="registration" class="register">
         <h2>Regisztrálj még most!</h2>
-        <p>A regisztrációddal megerősíted, hogy <br>elolvastad és elfogadod a <a href="/sites/rules.html">szabályzatunkat</a>.</p>
-        <form id="registerForm" action="register.php" method="POST">
+        <p>A regisztrációddal megerősíted, hogy <br>elolvastad és elfogadod a <a href="sites/rules.html">szabályzatunkat</a>.</p>
+        <form id="registerForm" action="sites/register.php" method="POST">
             <input type="text" name="fullname" placeholder="Teljes neved" required>
             <input type="text" name="class" placeholder="Osztályod (7 vagy 8)" required>
             <input type="email" name="email" placeholder="E-mail címed" required>
@@ -76,7 +76,7 @@
             <input type="text" name="team" placeholder="Csapatod neve" required>
             <button type="submit">ŰRLAP ELKÜLDÉSE</button>
         </form>
-        <p id="teamCount"></p>
+        <!-- <p id="teamCount"></p> -->
         <div id="feedbackMessage" style="display: none; font-size: 20px; margin-top: 10px;"></div>
     </section>
     <footer>
